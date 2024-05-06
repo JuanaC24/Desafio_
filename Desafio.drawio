@@ -1,0 +1,122 @@
+<mxfile host="65bd71144e">
+    <diagram id="U9FScML6VlTwNBy4YYKL" name="Página-1">
+        <mxGraphModel dx="872" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="19" value="Paciente&amp;nbsp;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="50" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Rut (PK)&lt;br&gt;Nombre&amp;nbsp;&lt;br&gt;Direccion&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="19" vertex="1">
+                    <mxGeometry y="40" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Consulta" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="50" width="140" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="ID_Consulta (PK)&lt;br&gt;Fecha&lt;br&gt;Hora de Atencion&amp;nbsp;&lt;br&gt;Numero de Box&lt;br&gt;Rut_Paciente(FK)&lt;br&gt;ID_Medico (FK)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="21" vertex="1">
+                    <mxGeometry y="40" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="Medico" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="260" width="150" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="ID_Medico(PK)&lt;br&gt;Nombre&amp;nbsp;&lt;br&gt;Rut&lt;br&gt;Direccion&amp;nbsp;&lt;br&gt;Codigo_Especialidad(FK)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="23" vertex="1">
+                    <mxGeometry y="40" width="150" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Licencia&amp;nbsp;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="260" width="140" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="Codigo (PK)&lt;br&gt;Diagnostico&lt;br&gt;Fecha de inicio&amp;nbsp;&lt;br&gt;Fecha de termino&lt;br&gt;Rut Paciente&amp;nbsp; (FK)&lt;br&gt;ID_Medico (FK)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="25" vertex="1">
+                    <mxGeometry y="40" width="140" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Especialidad" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="550" width="140" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Codigo (PK)&lt;br&gt;Descripcion&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="27" vertex="1">
+                    <mxGeometry y="40" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="Relation" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="280" y="110" as="sourcePoint"/>
+                        <mxPoint x="450" y="110" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="360" y="110"/>
+                            <mxPoint x="360" y="110"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="0..n" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;" parent="29" connectable="0" vertex="1">
+                    <mxGeometry x="-1" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="1" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=top;" parent="29" connectable="0" vertex="1">
+                    <mxGeometry x="1" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="Relation" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="26" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="280" y="140" as="sourcePoint"/>
+                        <mxPoint x="450" y="140" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="310" y="140"/>
+                            <mxPoint x="310" y="200"/>
+                            <mxPoint x="400" y="200"/>
+                            <mxPoint x="400" y="345"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="0..n" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;" parent="32" connectable="0" vertex="1">
+                    <mxGeometry x="-1" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="1" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=top;" parent="32" connectable="0" vertex="1">
+                    <mxGeometry x="1" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="Relation" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="280" y="360" as="sourcePoint"/>
+                        <mxPoint x="450" y="360" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="360" y="360"/>
+                            <mxPoint x="360" y="360"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="0..n" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;" parent="38" connectable="0" vertex="1">
+                    <mxGeometry x="-1" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="1" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=top;" parent="38" connectable="0" vertex="1">
+                    <mxGeometry x="1" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="Relation" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;entryX=0.429;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="27" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="190" y="390" as="sourcePoint"/>
+                        <mxPoint x="360" y="390" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="200" y="390"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="42" value="0..n" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;" parent="41" connectable="0" vertex="1">
+                    <mxGeometry x="-1" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="1" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=top;" parent="41" connectable="0" vertex="1">
+                    <mxGeometry x="1" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="Relation" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;exitX=0.792;exitY=1.028;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="24" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="300" y="430" as="sourcePoint"/>
+                        <mxPoint x="610" y="180" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="249" y="430"/>
+                            <mxPoint x="680" y="430"/>
+                            <mxPoint x="680" y="180"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" value="0..n" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;" parent="44" connectable="0" vertex="1">
+                    <mxGeometry x="-1" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="1" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=top;" parent="44" connectable="0" vertex="1">
+                    <mxGeometry x="1" relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
